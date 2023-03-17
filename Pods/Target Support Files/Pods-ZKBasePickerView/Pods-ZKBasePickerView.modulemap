@@ -1,0 +1,6 @@
+framework module Pods_ZKBasePickerView {
+  umbrella header "Pods-ZKBasePickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
