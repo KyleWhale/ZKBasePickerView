@@ -215,7 +215,7 @@ typedef void(^unDatedoneBlock)(NSArray<ZKBaseResponseSelectionOption *>*);
 {
     self = [super init];
     if (self) {
-        self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
+        self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
         
         self.datePickerStyle = datePickerStyle;
         self.scrollToDate = scrollToDate;
@@ -309,7 +309,7 @@ typedef void(^unDatedoneBlock)(NSArray<ZKBaseResponseSelectionOption *>*);
 {
     self = [super init];
     if (self) {
-        self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
+        self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
         if (self.pickerViewTitle && self.pickerViewTitle.length > 0) {
             self.self.statusTitle.text = self.pickerViewTitle;
         }
@@ -330,7 +330,7 @@ typedef void(^unDatedoneBlock)(NSArray<ZKBaseResponseSelectionOption *>*);
     self = [super init];
     if (self) {
 
-        self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
+        self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
         if (self.pickerViewTitle && self.pickerViewTitle.length > 0) {
             self.self.statusTitle.text = self.pickerViewTitle;
         }
